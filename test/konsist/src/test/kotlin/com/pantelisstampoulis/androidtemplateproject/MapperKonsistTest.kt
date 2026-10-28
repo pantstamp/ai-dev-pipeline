@@ -22,7 +22,7 @@ import kotlin.test.Test
  * boundaries that outlive an implementation choice; a mapping between a `DbModel` and a
  * library-specific type belongs to the module implementing it.
  *
- * [pr]: https://github.com/pantstamp/android-template-project/pull/14
+ * [pr]: https://github.com/pantstamp/ai-dev-pipeline/pull/14
  */
 @Suppress("ConstPropertyName")
 class MapperKonsistTest {

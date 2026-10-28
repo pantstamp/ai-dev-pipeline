@@ -1,6 +1,6 @@
 # Retrospective: Discover Load Error Recovery
 
-PR: [#24](https://github.com/pantstamp/android-template-project/pull/24) (fixes [#23](https://github.com/pantstamp/android-template-project/issues/23))
+PR: [#24](https://github.com/pantstamp/ai-dev-pipeline/pull/24) (fixes [#23](https://github.com/pantstamp/ai-dev-pipeline/issues/23))
 Merged: 2026-09-26
 Retrospective written: 2026-09-26
 
@@ -147,7 +147,7 @@ it will keep happening.
 The three new previews threw `KoinApplication has not been started`. The screen resolves its effect
 dispatcher with `getKoin()` inside the composable, and a preview never starts Koin. The fix in this
 PR is a preview-only `KoinApplicationPreview` wrapper (`MovieListPreviewKoin`). The root cause is
-tracked in [#25](https://github.com/pantstamp/android-template-project/issues/25).
+tracked in [#25](https://github.com/pantstamp/ai-dev-pipeline/issues/25).
 
 **This also rewrites a claim in the watched-movies retro.** That retro lists "Missing `@Preview`
 composables → added for three composables — fixed". `WatchedMovieListScreen` makes the same
@@ -205,7 +205,7 @@ Under **Architecture → Flow and coroutines** (next to the strings rule), or a 
 > - **Every visual state a screen can render gets a `@Preview`** — loading, error (each variant),
 >   empty, content. CI compiles previews but never renders them; open them in Android Studio before
 >   calling them done. Screens that call `getKoin()` throw in a preview until
->   [#25](https://github.com/pantstamp/android-template-project/issues/25) lands; wrap them in
+>   [#25](https://github.com/pantstamp/ai-dev-pipeline/issues/25) lands; wrap them in
 >   `KoinApplicationPreview` (see `MovieListPreviewKoin` in `MovieListScreen.kt`).
 
 Under **Testing**:

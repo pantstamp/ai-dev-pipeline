@@ -61,7 +61,7 @@ Phases:
   — including the TMDB bearer token added by `HeaderInterceptor` — are logged in release builds
   (`HeaderInterceptor` runs before the logger). → Same separate fix PR.
 - `MovieDao.getMovieEntities()` has no `ORDER BY`, so Discover's order is unspecified, and rows from
-  earlier Discover fetches are never evicted. → [pantstamp/android-template-project#30](https://github.com/pantstamp/android-template-project/issues/30).
+  earlier Discover fetches are never evicted. → [pantstamp/ai-dev-pipeline#30](https://github.com/pantstamp/ai-dev-pipeline/issues/30).
 
 ---
 

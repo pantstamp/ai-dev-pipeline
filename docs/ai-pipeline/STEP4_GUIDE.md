@@ -53,7 +53,7 @@ project's side; $5–50 per golden-scenario re-run for the release.
 - [ ] **Clone this repo** next to the project:
 
       ```bash
-      git clone https://github.com/pantstamp/android-template-project.git ~/src/android-template-project
+      git clone https://github.com/pantstamp/ai-dev-pipeline.git ~/src/ai-dev-pipeline
       ```
 - [ ] **The project is clean:** `git status` shows nothing, and you are on its base branch or a
       branch freshly cut from it. Write down:
@@ -98,12 +98,12 @@ project's side; $5–50 per golden-scenario re-run for the release.
 From the project's build root, with this repo added (adjust both paths):
 
 ```bash
-cd ~/src/the-project && claude --add-dir ~/src/android-template-project
+cd ~/src/the-project && claude --add-dir ~/src/ai-dev-pipeline
 ```
 
 First message:
 
-> Read `~/src/android-template-project/docs/ai-pipeline/HANDOFF.md` and its `STEP4_GUIDE.md`,
+> Read `~/src/ai-dev-pipeline/docs/ai-pipeline/HANDOFF.md` and its `STEP4_GUIDE.md`,
 > then run step 4 on this project with `pipeline-v2.1.0`, stopping at each of the guide's
 > checkpoints for me to check. The base branch is `…`, and the feature branch for the gate is
 > `…`. Keep every pipeline file local to this laptop: nothing is committed or pushed in this
@@ -154,7 +154,7 @@ Either way, Claude copies the files from the tag, not from this repo's `master`.
 the tag holds is also what part 6 removes:
 
 ```bash
-git -C ~/src/android-template-project ls-tree -r --name-only pipeline-v2.1.0 .claude/skills .claude/agents
+git -C ~/src/ai-dev-pipeline ls-tree -r --name-only pipeline-v2.1.0 .claude/skills .claude/agents
 ```
 
 - [ ] Right after the install, `git status` shows only new (`??`) files under `.claude/`, and **no

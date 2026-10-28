@@ -11,11 +11,11 @@ in this repo. This HANDOFF is not part of the plugin, so that session reads it f
 repo. On the production machine, as in step 4 ([`STEP4_GUIDE.md`](STEP4_GUIDE.md)):
 
 ```bash
-git -C ~/src/android-template-project pull    # or: git clone https://github.com/pantstamp/android-template-project.git ~/src/android-template-project
-cd ~/src/the-project && claude --add-dir ~/src/android-template-project
+git -C ~/src/ai-dev-pipeline pull    # or: git clone https://github.com/pantstamp/ai-dev-pipeline.git ~/src/ai-dev-pipeline
+cd ~/src/the-project && claude --add-dir ~/src/ai-dev-pipeline
 ```
 
-Then say: *"Read `~/src/android-template-project/docs/ai-pipeline/HANDOFF.md` and do step 6."*
+Then say: *"Read `~/src/ai-dev-pipeline/docs/ai-pipeline/HANDOFF.md` and do step 6."*
 
 **Work on the pipeline itself** (the follow-ups below) starts in this repo with *"Read
 docs/ai-pipeline/HANDOFF.md and continue."*
@@ -25,7 +25,7 @@ docs/ai-pipeline/HANDOFF.md and continue."*
 On the production machine:
 - [ ] `claude --version` is 2.1.280 or newer, and `claude -p "reply with ok"` answers.
 - [ ] `glab auth status` passes (the project is on GitLab).
-- [ ] `git ls-remote --tags https://github.com/pantstamp/android-template-project.git pipeline-v3.0.0`
+- [ ] `git ls-remote --tags https://github.com/pantstamp/ai-dev-pipeline.git pipeline-v3.0.0`
   shows the tag.
 
 In this repo, for pipeline work:

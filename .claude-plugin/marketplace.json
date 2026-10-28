@@ -3,7 +3,7 @@
   "owner": {
     "name": "Pantelis Stampoulis"
   },
-  "description": "The AI development pipeline built and tested in this template project.",
+  "description": "An eval-gated AI development pipeline for production codebases.",
   "plugins": [
     {
       "name": "ai-pipeline",

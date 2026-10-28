@@ -9,6 +9,21 @@ Entries are grouped by stage and say what changed and why.
 
 ## Unreleased
 
+## 3.0.1 — 2026-10-28
+
+The repository is renamed from `android-template-project` to `ai-dev-pipeline`, so the plugin is
+found by the pipeline, not by the app it was built on. **Released on the packaging-only rule** with
+no scenario run: no skill or agent file changed, and no scenario reads the repository's URL, so
+none could break. **Patch**, because nothing a skill says or does changed. **Upgrading a
+project:** point the marketplace `url` at `https://github.com/pantstamp/ai-dev-pipeline.git` and
+move `ref` to `pipeline-v3.0.1`, then run the two update commands (`docs/AI_PIPELINE_ROADMAP.md`
+§2). GitHub redirects the old URL, so a project left on 3.0.0 keeps working, but it should not
+depend on the redirect.
+
+### All stages
+- **`plugin.json`'s `repository` and the marketplace's description name the new repository.** The
+  install commands in the roadmap and `PLUGIN_GUIDE.pdf` now use the new URL and this tag.
+
 ## 3.0.0 — 2026-10-23
 
 Roadmap step 5: the pipeline is a plugin. **Released on the packaging-only rule** (suite README,

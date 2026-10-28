@@ -39,7 +39,7 @@ class PresentationLayerKonsistTest {
      *
      * Every screen preview was broken this way until [issue #25][issue] was fixed.
      *
-     * [issue]: https://github.com/pantstamp/android-template-project/issues/25
+     * [issue]: https://github.com/pantstamp/ai-dev-pipeline/issues/25
      */
     @Test
     fun `Feature presentation files should NOT import Koin's Compose APIs`() {

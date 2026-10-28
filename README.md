@@ -1,6 +1,6 @@
 # Android Template Project
 
-[![Build](https://github.com/pantstamp/android-template-project/actions/workflows/build.yml/badge.svg)](https://github.com/pantstamp/android-template-project/actions/workflows/build.yml)
+[![Build](https://github.com/pantstamp/ai-dev-pipeline/actions/workflows/build.yml/badge.svg)](https://github.com/pantstamp/ai-dev-pipeline/actions/workflows/build.yml)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.4.20-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Compose](https://img.shields.io/badge/Compose-2026.06.01-4285F4?logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![minSdk](https://img.shields.io/badge/minSdk-24-3DDC84?logo=android&logoColor=white)](https://developer.android.com/)

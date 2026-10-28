@@ -95,16 +95,17 @@ def table(rows, widths):
     return [t, Spacer(1, 9)]
 
 
-REPO_URL = "https://github.com/pantstamp/android-template-project.git"
+REPO_URL = "https://github.com/pantstamp/ai-dev-pipeline.git"
 
 s = []
 # ── cover ─────────────────────────────────────────────────────────────────────────────────
 s += [Spacer(1, 40 * mm), Paragraph("The ai-pipeline plugin", title),
       Paragraph("Using it, releasing a new version, and installing and updating it in other projects", subtitle),
-      p("Source: `plugins/ai-pipeline/` in `pantstamp/android-template-project`. Written for "
+      p("Source: `plugins/ai-pipeline/` in `pantstamp/ai-dev-pipeline`. Written for "
         "Claude Code 2.1.296 on 2026-10-23."),
       Spacer(1, 10)]
-s += box("**Current version: 3.0.0**, tagged `pipeline-v3.0.0`, the first release as a plugin. Each "
+s += box("**Current version: 3.0.1**, tagged `pipeline-v3.0.1`: 3.0.0, the first release as a plugin, "
+         "with the repository's new name. Each "
          "release's changes, and what a project must do to take it, are in "
          "`plugins/ai-pipeline/skills/CHANGELOG.md`.")
 s += [Spacer(1, 6), p("**Contents**", body)]
@@ -272,7 +273,7 @@ s += steps([
 ])
 s += code(f"""
 claude plugin marketplace add \\
-  "{REPO_URL}#pipeline-v3.0.0" \\
+  "{REPO_URL}#pipeline-v3.0.1" \\
   --scope project --sparse .claude-plugin plugins
 
 claude plugin install ai-pipeline@ai-pipeline --scope project
@@ -289,7 +290,7 @@ s += code(f"""
       "source": {{
         "source": "git",
         "url": "{REPO_URL}",
-        "ref": "pipeline-v3.0.0",
+        "ref": "pipeline-v3.0.1",
         "sparsePaths": [".claude-plugin", "plugins"]
       }}
     }}

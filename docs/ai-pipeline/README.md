@@ -113,7 +113,8 @@ the commit they were taken at.
 
 ## Status
 
-`pipeline-v3.0.0` was released on 2026-10-23 on the packaging-only rule below; `pipeline-v2.1.0`,
+`pipeline-v3.0.1` (2026-10-28) only follows the repository's rename and needed no run under the
+packaging-only rule below. `pipeline-v3.0.0` was released on 2026-10-23 on that rule; `pipeline-v2.1.0`,
 on 2026-10-21, was the last release run on the full rule. Each `RESULTS.md` has the details,
 newest first. Prefer the `eval.py` numbers over the in-session entries further down.
 
