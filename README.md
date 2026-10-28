@@ -5,32 +5,12 @@
 
 **An eval-gated AI development pipeline for production codebases, shipped as a Claude Code plugin.**
 
-I help teams adopt agentic development on production apps without giving up code quality: fifteen
-years of architecture, delivery and mentoring, turned into an AI pipeline with gates, evals and
-retrospectives. Built and maintained by Pantelis Stampoulis
-([LinkedIn](https://www.linkedin.com/in/pantelisstampoulis/)).
+ai-dev-pipeline takes a feature from ticket to retrospective in six stages. AI agents do the work
+inside each stage, and an engineer approves the result before the next one starts. Every release is
+regression-tested against replayed scenarios before it ships. It is developed on a 30-module Android
+app in this repository, its test bed, and in use on a production Android app.
 
-The pipeline takes a feature from spec to retrospective in six stages. AI agents do the work inside
-each stage, and an engineer decides at the end of every one. It is developed and measured on a
-30-module Android app in this repository, which is its test bed.
-
-## Results
-
-Review findings on the three features taken through the pipeline, as the pipeline stood at the
-time. Each comes from that feature's retrospective.
-
-| | [watched-movies](docs/features/watched-movies/RETRO.md) (#14) | [discover-load-error-recovery](docs/features/discover-load-error-recovery/RETRO.md) (#24) | [movie-search](docs/features/movie-search/RETRO.md) (#32) |
-|---|---|---|---|
-| Review findings | 16 | 4 | 7 |
-| Critical / Major | 1 / 8 | 0 / 0 | 0 / 0 |
-| Merged unaddressed | 4 | 0 | 0 |
-| Findings that originated in the plan | — | 1 | 5 |
-
-On movie-search, **five of the six real findings came from the plan, not the code**, which is why
-the architect stage has its own golden scenario replaying that feature.
-
-Limits: three features, one developer, and the counts are not normalised by the size of each diff.
-Nothing here measures speed; the claim is about quality.
+Created and maintained by [Pantelis Stampoulis](https://www.linkedin.com/in/pantelisstampoulis/).
 
 ## The pipeline
 
@@ -129,8 +109,9 @@ release passed and what a project must do to take it.
 
 From [`AI_PIPELINE_ROADMAP.md`](docs/AI_PIPELINE_ROADMAP.md):
 
-- **Next: install on the production project**, pinned to a tag, and take one real feature through
-  the whole pipeline, retrospective included.
+- **In progress: production use.** Installed on a production Android app, pinned to a release tag,
+  and used for real tickets. Next is the first retrospective from it, which will show whether the
+  results below hold outside this repository.
 - **Then other platforms, Flutter first**, but only once a real project on that platform adopts it.
   With one platform there is no way to tell which parts are generic, and a first attempt to guess
   regressed two stages. Android first, deliberately.
@@ -167,7 +148,7 @@ Gradle runs on **JDK 21**; the compile JDK is provisioned automatically. Add a
 ./gradlew lint                 # Android Lint
 ```
 
-## Worked examples
+## Worked examples and results
 
 Each feature's folder in [`docs/features/`](docs/features/) holds the SPEC, PLAN and RETRO the
 pipeline produced, newest first:
@@ -180,6 +161,22 @@ pipeline produced, newest first:
   retry on the Discover tab.
 - [watched-movies](docs/features/watched-movies/) — the first run, and the baseline the others are
   measured against.
+
+The automated review's findings on the three features with a retrospective, as the pipeline stood
+at the time:
+
+| | [watched-movies](docs/features/watched-movies/RETRO.md) (#14) | [discover-load-error-recovery](docs/features/discover-load-error-recovery/RETRO.md) (#24) | [movie-search](docs/features/movie-search/RETRO.md) (#32) |
+|---|---|---|---|
+| Review findings | 16 | 4 | 7 |
+| Critical / Major | 1 / 8 | 0 / 0 | 0 / 0 |
+| Merged unaddressed | 4 | 0 | 0 |
+| Findings that originated in the plan | — | 1 | 5 |
+
+On movie-search, **five of the six real findings came from the plan, not the code**, which is why
+the architect stage has its own golden scenario replaying that feature.
+
+Limits: three features, one developer, and the counts are not normalised by the size of each diff.
+Nothing here measures speed; the claim is about quality.
 
 ## Where the work is
 
