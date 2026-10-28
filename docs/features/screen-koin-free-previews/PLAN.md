@@ -16,7 +16,7 @@ presentation code.
 ## References
 
 - Spec: `docs/features/screen-koin-free-previews/SPEC.md`
-- Issue: https://github.com/pantstamp/android-template-project/issues/25
+- Issue: https://github.com/pantstamp/ai-dev-pipeline/issues/25
 - Project conventions: `CLAUDE.md`
 
 ## Decisions
@@ -48,7 +48,7 @@ presentation code.
     call the screen directly.
 - **Notes** (not touched by this plan)
   - `MovieDetailsScreen` sends `Init` from `LifecycleEventEffect(ON_CREATE)`, so every rotation
-    re-runs both one-shot loads without cancelling the previous ones. Filed as [#27](https://github.com/pantstamp/android-template-project/issues/27); see Implementation Notes.
+    re-runs both one-shot loads without cancelling the previous ones. Filed as [#27](https://github.com/pantstamp/ai-dev-pipeline/issues/27); see Implementation Notes.
   - `MovieDetailsUiState.errorMessage: String` carries user-facing text from the ViewModel, and
     `MovieRepositoryImpl.getMovie` reports a missing row as `Error(DomainError.NotFound())`.
     Both contradict CLAUDE.md, and both are out of scope here.

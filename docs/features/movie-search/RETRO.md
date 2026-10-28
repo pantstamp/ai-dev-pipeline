@@ -1,6 +1,6 @@
 # Retrospective: Movie Search
 
-PR: [#32](https://github.com/pantstamp/android-template-project/pull/32) (fixes [#29](https://github.com/pantstamp/android-template-project/issues/29))
+PR: [#32](https://github.com/pantstamp/ai-dev-pipeline/pull/32) (fixes [#29](https://github.com/pantstamp/ai-dev-pipeline/issues/29))
 Merged: 2026-09-27
 Retrospective written: 2026-09-27
 
@@ -19,7 +19,7 @@ The automated review raised **7 inline findings: 0 Critical, 0 Major, 3 Minor, 4
 - **Five were fixed** in one follow-up commit.
 - **One was a false positive.** It was answered, and the comment it questioned was reworded to be
   easier to verify.
-- **One was deferred** to [#30](https://github.com/pantstamp/android-template-project/issues/30), a
+- **One was deferred** to [#30](https://github.com/pantstamp/ai-dev-pipeline/issues/30), a
   spec gap, and recorded in the spec's Out of Scope.
 
 The review ran once, and no finding arrived after the last commit. **Zero findings were merged
@@ -111,7 +111,7 @@ previews were then checked by the user, and all passed.
 
 **The out-of-scope problems found on the way were split off, not absorbed.**
 - **The TMDB bearer token logged in release builds, and wrong logger tags:** fixed in a separate PR,
-  [#31](https://github.com/pantstamp/android-template-project/pull/31).
+  [#31](https://github.com/pantstamp/ai-dev-pipeline/pull/31).
 - **Discover's missing order and stale rows:** filed as #30.
 
 ## What the reviewer caught

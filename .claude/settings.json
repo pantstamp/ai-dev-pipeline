@@ -3,7 +3,7 @@
     "ai-pipeline": {
       "source": {
         "source": "git",
-        "url": "https://github.com/pantstamp/android-template-project.git",
+        "url": "https://github.com/pantstamp/ai-dev-pipeline.git",
         "ref": "pipeline-v3.0.0",
         "sparsePaths": [
           ".claude-plugin",

@@ -12,7 +12,7 @@ import kotlin.test.Test
  *
  * Raised on [PR #14][pr] and never fixed, which is the reason this rule exists.
  *
- * [pr]: https://github.com/pantstamp/android-template-project/pull/14
+ * [pr]: https://github.com/pantstamp/ai-dev-pipeline/pull/14
  */
 @Suppress("ConstPropertyName")
 class DaoKonsistTest {

@@ -1,10 +1,10 @@
 {
   "name": "ai-pipeline",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Spec, plan, build, gate, review and retro skills for Android projects, with a read-only pre-PR gate agent. Each project describes itself in .claude/pipeline.md.",
   "author": {
     "name": "Pantelis Stampoulis"
   },
-  "repository": "https://github.com/pantstamp/android-template-project",
+  "repository": "https://github.com/pantstamp/ai-dev-pipeline",
   "license": "MIT"
 }

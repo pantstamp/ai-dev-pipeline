@@ -86,7 +86,7 @@ token; it can move to its own repo later by changing one line in each consumer.
 Each developer then runs, once, in the project:
 
 ```
-claude plugin marketplace add "https://github.com/pantstamp/android-template-project.git#pipeline-v3.0.0" --scope project --sparse .claude-plugin plugins
+claude plugin marketplace add "https://github.com/pantstamp/ai-dev-pipeline.git#pipeline-v3.0.1" --scope project --sparse .claude-plugin plugins
 claude plugin install ai-pipeline@ai-pipeline --scope project
 ```
 
@@ -99,8 +99,8 @@ pinned to the tag, and enables the plugin:
     "ai-pipeline": {
       "source": {
         "source": "git",
-        "url": "https://github.com/pantstamp/android-template-project.git",
-        "ref": "pipeline-v3.0.0",
+        "url": "https://github.com/pantstamp/ai-dev-pipeline.git",
+        "ref": "pipeline-v3.0.1",
         "sparsePaths": [".claude-plugin", "plugins"]
       }
     }
@@ -119,7 +119,7 @@ files, 488 KB; git's sparse "cone" mode always keeps top-level files).
 developer then runs, with the project's tag:
 
 ```
-claude plugin marketplace add "https://github.com/pantstamp/android-template-project.git#pipeline-vX.Y.Z" --scope project --sparse .claude-plugin plugins
+claude plugin marketplace add "https://github.com/pantstamp/ai-dev-pipeline.git#pipeline-vX.Y.Z" --scope project --sparse .claude-plugin plugins
 claude plugin update ai-pipeline@ai-pipeline --scope project
 ```
 

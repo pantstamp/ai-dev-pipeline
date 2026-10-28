@@ -1,6 +1,6 @@
 # Retrospective: Watched Movies
 
-PR: [#14](https://github.com/pantstamp/android-template-project/pull/14)
+PR: [#14](https://github.com/pantstamp/ai-dev-pipeline/pull/14)
 Feature merged: 2026-04-12
 Retrospective written: 2026-09-22
 
@@ -66,7 +66,7 @@ From the review's own "what looks good" section, and confirmed in the code:
   ratings
 - Both ViewModels correctly scoped to the same `NavBackStackEntry`
 
-And the fix commit itself ([`c08fc00`](https://github.com/pantstamp/android-template-project/commit/c08fc00a48992b082fa0e9bcb32085404ece666f))
+And the fix commit itself ([`c08fc00`](https://github.com/pantstamp/ai-dev-pipeline/commit/c08fc00a48992b082fa0e9bcb32085404ece666f))
 was thorough: twelve of twelve wave-1 findings addressed, including both
 optional suggestions, with tests updated to match the renamed side effects and
 removed event. When findings were acted on, they were acted on properly.
@@ -225,7 +225,7 @@ are real and unfixed, so the rules have something to catch on their first run.
 - **The review workflow was unreliable at the time.** `@claude Please review
   this PR` was posted eleven times between 07:28 and 09:31 before a review
   landed at 09:43. That has since been addressed in
-  [#19](https://github.com/pantstamp/android-template-project/pull/19), which
+  [#19](https://github.com/pantstamp/ai-dev-pipeline/pull/19), which
   made the review opt-in, API-key authenticated, and honest about failures — but
   it is worth recording that roughly two hours of this feature's cycle time went
   to retrying a silent failure.
