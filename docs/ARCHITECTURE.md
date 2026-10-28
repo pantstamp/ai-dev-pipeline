@@ -1,6 +1,6 @@
 # Architecture
 
-Here you will explore the architecture of the Android Template app, including its layers, key classes, and how they interact with each other.
+Here you will explore the architecture of the test-bed Android app, including its layers, key classes, and how they interact with each other.
 
 ## Architecture overview
 
@@ -81,4 +81,4 @@ In the "core" package, there are the "data," "domain," "model," "database," and 
 
 If a class is intended to be used only by a specific feature module, we must place it in the corresponding feature module. Otherwise, if it exists in the core directory, every change to it will trigger rebuilds of feature modules that don't actually use it.
 
-**This app serves as a template and example for building other apps. That's why it contains as few features as possible, and that's also why the classes in the core module are used only by one feature module.**
+**This app serves as an example and as the AI pipeline's test bed. That's why it contains as few features as possible, and that's also why the classes in the core module are used only by one feature module.**

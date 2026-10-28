@@ -1,8 +1,8 @@
 # Contributing
 
 This is a single-maintainer repository. The workflow below is written down anyway — partly so it
-stays consistent over time, partly because a forked template should say how it expects to be worked
-on.
+stays consistent over time, partly because a repository that ships a plugin to other projects should say how it
+expects to be worked on.
 
 ---
 
@@ -28,7 +28,7 @@ pull requests — the second one reviewing a diff that had already been reviewed
 maintainer and continuous delivery, it is ceremony. Tags mark known-good states more precisely than
 a second branch ever did.
 
-If this template is adopted by a team that does run release trains, adding a release branch back is
+If this repository is adopted by a team that does run release trains, adding a release branch back is
 a small change. The point is to choose it deliberately rather than inherit it.
 
 ### Branch naming
@@ -167,7 +167,9 @@ git push origin v1.1.0
 ```
 
 Roughly [semver](https://semver.org): patch for fixes, minor for features or toolchain upgrades,
-major for breaking changes to the template's structure.
+major for breaking changes to the test-bed app's structure. The pipeline plugin is versioned
+separately, with `pipeline-vX.Y.Z` tags; see its
+[`README.md`](plugins/ai-pipeline/skills/README.md#versions).
 
 ---
 
