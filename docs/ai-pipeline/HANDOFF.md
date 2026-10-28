@@ -25,7 +25,7 @@ docs/ai-pipeline/HANDOFF.md and continue."*
 On the production machine:
 - [ ] `claude --version` is 2.1.280 or newer, and `claude -p "reply with ok"` answers.
 - [ ] `glab auth status` passes (the project is on GitLab).
-- [ ] `git ls-remote --tags https://github.com/pantstamp/ai-dev-pipeline.git pipeline-v3.0.0`
+- [ ] `git ls-remote --tags https://github.com/pantstamp/ai-dev-pipeline.git pipeline-v3.0.1`
   shows the tag.
 
 In this repo, for pipeline work:
@@ -77,7 +77,7 @@ for step 6:
      2.1.0 added: `{{rules}}`, `{{rules-home}}`, `{{lint}}` and `{{issues}}`.
    - run the two install commands, and commit `pipeline.md` and `settings.json`. They then run under
      the project's own CI checks.
-   - restart Claude Code, check `claude plugin list` shows 3.0.0, and that typing `/ai-pipeline:`
+   - restart Claude Code, check `claude plugin list` shows 3.0.1, and that typing `/ai-pipeline:`
      lists the six skills
    - take one real feature through the whole pipeline, ending with a retro
    - this is the first run of the GitLab steps, of rules kept outside `CLAUDE.md`, of a flavoured

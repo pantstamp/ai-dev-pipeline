@@ -4,7 +4,7 @@
       "source": {
         "source": "git",
         "url": "https://github.com/pantstamp/ai-dev-pipeline.git",
-        "ref": "pipeline-v3.0.0",
+        "ref": "pipeline-v3.0.1",
         "sparsePaths": [
           ".claude-plugin",
           "plugins"
