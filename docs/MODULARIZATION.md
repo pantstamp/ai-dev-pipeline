@@ -1,6 +1,6 @@
 # Modularization
 
-Here you will explore the modularization strategy of the Android Template app.
+Here you will explore the modularization strategy of the test-bed Android app.
 
 ### Why Multi-Module?
 
@@ -9,7 +9,7 @@ Here you will explore the modularization strategy of the Android Template app.
 * Incremental Compilation: Modifying a file allows modularized apps to compile faster compared to monolithic apps.
 * CI/CD processes run faster.
 
-### Modules in Android Template App
+### Modules in the app
 
 <center>
 <img src="images/modules.png" width="600px" alt="Diagram showing basic modules" />

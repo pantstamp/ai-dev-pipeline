@@ -1,8 +1,9 @@
 # AI pipeline roadmap — from this project to a reusable package
 
 Status: steps 1–5 done. Step 3 is `pipeline-v2.0.0`, step 4's fixes are `pipeline-v2.1.0`, and
-step 5, the plugin, is `pipeline-v3.0.0`. **Next: step 6**, the production project. The next session's brief is
-[`docs/ai-pipeline/HANDOFF.md`](ai-pipeline/HANDOFF.md). Re-planned on 2026-10-15 after a first
+step 5, the plugin, is `pipeline-v3.0.0`. **Step 6 is in progress:** the production project has
+`pipeline-v3.0.0` installed and uses it for real tickets; its first retro is still to come. The
+brief it started from is [`docs/ai-pipeline/HANDOFF.md`](ai-pipeline/HANDOFF.md). Re-planned on 2026-10-15 after a first
 attempt at a platform split regressed two stages (see §5).
 
 **Starting a new session on this roadmap:** read this file, then `CLAUDE.md`,
@@ -34,7 +35,8 @@ released versions.
 5. ✅ **Package as a plugin** (§2), in this repo, and switch this repo and the suite to it.
    Released as `pipeline-v3.0.0` on 2026-10-23 (the command and agent names change).
 6. **Install on the production project** (§2), pinned to the tag, and take one real feature
-   through the whole pipeline, retro included.
+   through the whole pipeline, retro included. In progress: installed at `pipeline-v3.0.0` and
+   delivering real tickets; no retro yet.
 7. **Flutter**, when a real Flutter project adopts it (§5). Not before: with one platform you
    cannot tell what is generic, and the first attempt to guess cost two regressions.
 

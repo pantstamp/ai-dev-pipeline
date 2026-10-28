@@ -33,13 +33,13 @@ stage 1. Each stage commits its output there, so nothing sits untracked on `mast
 stages. Everything for one change lives in `docs/features/{feature-name}/`:
 
 ```
-docs/features/watched-movies/
+docs/features/movie-search/
 ├── SPEC.md      ← stage 1
 ├── PLAN.md      ← stage 2
 └── RETRO.md     ← stage 6
 ```
 
-`docs/features/watched-movies/` is a real worked example — read it before your
+`docs/features/movie-search/` is a real worked example — read it before your
 first run to see what each document looks like when finished.
 
 ---
